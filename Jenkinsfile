@@ -20,8 +20,8 @@ pipeline {
                                   usernameVariable: 'USERNAME',
                                   passwordVariable: 'PASSWORD']]) {
 
-                     'C:\Program Files\Cloud Foundry\cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
-                     'C:\Program Files\Cloud Foundry\cf push'
+                     'cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
+                     'cf push'
                 }
             }
 
